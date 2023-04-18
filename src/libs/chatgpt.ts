@@ -17,7 +17,7 @@ const chatBot = async (message: string) => {
       },
     ],
   })
-  const resMessage = response.data.choices[0]?.message?.content
+  const resMessage = response.data.choices[0]?.message?.content as string
   return resMessage
 }
 
